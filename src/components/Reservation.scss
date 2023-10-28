@@ -1,0 +1,141 @@
+input {
+  margin: 0;
+}
+
+.reservation {
+  background-color: #495E57;
+}
+
+.reservation-wrap {
+  margin: 40px auto;
+  color: #fff;
+  width: 75%;
+}
+
+.reservation-wrap .title {
+  color: #F4CE15;
+  font-size: 38px;
+}
+
+.reservation-wrap .subTitle {
+  color: #fff;
+}
+
+.reservation-wrap h1,
+.reservation-wrap h2 {
+  color: #fff;
+}
+
+.reservation-wrap .personal-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 40px auto;
+  font-size: 18px;
+}
+
+.dateTimeContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.dateTimeContainer input[type="date"] {
+  width: 50%;
+  height: 30px;
+}
+
+.dateTimeContainer input[type="date"]:before {
+  content: attr(placeholder) !important;
+  margin-right: 1em;
+}
+
+.dateTimeContainer input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+
+.dateTimeContainer #res-time {
+  width: 40%;
+}
+
+input[type="number"] {
+  width: 99%;
+  padding: 0;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.occasions {
+  width: 99%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.radioBtnContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+
+.reservation-wrap .personal-details input {
+  height: 30px;
+  margin-top: 10px;
+}
+
+.reservation-wrap .personal-details textarea {
+  width: 70%;
+  margin-top: 10px;
+}
+
+.img-wrap {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.img-wrap img {
+  width: 49%;
+}
+
+.btnReceive button {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: #F4CE15;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  box-shadow: 4px 6px 5px rgba(#000, 0.2);
+  cursor: pointer;
+}
+
+.btnReceive button:hover {
+  // transition: background 0.3s;
+  box-shadow: 2px 2px 4px rgba(#000, 0.2);
+}
+
+@media only screen and (max-width: 800px) {
+  .reservation-wrap {
+    width: 100%;
+  }
+
+  .reservation-wrap .personal-details {
+    width: 90%;
+  }
+
+  .reservation-wrap .personal-details textarea {
+    width: 98%;
+  }
+
+  .reservation-wrap .title,
+  .reservation-wrap .subTitle,
+  .btnReceive button {
+    margin-left: 25px;
+  }
+
+}
